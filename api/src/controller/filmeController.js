@@ -20,6 +20,7 @@ server.post('/filme', async (req, resp) => {
         if(!novoFilme.lancamento)
             throw new Error('Lançamento é obrigatório');
 
+            
         if(!novoFilme.disponivel)
             throw new Error('campo disponível é obrigatório');
 
