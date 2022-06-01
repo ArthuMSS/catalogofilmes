@@ -26,6 +26,7 @@ server.post('/filme', async (req, resp) => {
         if(!novoFilme.usuario)
             throw new Error('Usuario não logado');
 
+
         
         const filmeInserido = await inserirFilme (novoFilme)
 
