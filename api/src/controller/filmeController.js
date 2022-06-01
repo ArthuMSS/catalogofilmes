@@ -20,14 +20,11 @@ server.post('/filme', async (req, resp) => {
         if(!novoFilme.lancamento)
             throw new Error('Lançamento é obrigatório');
 
-            
         if(!novoFilme.disponivel)
             throw new Error('campo disponível é obrigatório');
 
         if(!novoFilme.usuario)
             throw new Error('Usuario não logado');
-
-        
 
         
         const filmeInserido = await inserirFilme (novoFilme)
